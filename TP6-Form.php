@@ -34,8 +34,10 @@ Tester l’affichage obtenu.
         $formulaire = new Form();
         $formulaire->setText();
         $formulaire->setText();
+        $formulaire->setText();
+        $formulaire->setText();
         $formulaire->setSubmit();
-        // $formulaire->getForm();
+        echo $formulaire->getForm();
         ?>
 
     </div>
