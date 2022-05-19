@@ -3,7 +3,7 @@
 class Form
 {
     //On utilise .= pour concaténer une string avec un nouveau texte.
-    private $formulaire;
+    protected $formulaire;
 
     public function __construct()
     {
@@ -19,8 +19,9 @@ class Form
      */
     public function setSubmit()
     {
+        $submitString = '<br><button type="submit" name="submit" class="log-form-btn"><span>Login</span></button>';
         // echo '<br><button type="submit" name="submit" class="log-form-btn"><span>Login</span></button>';
-        $this->formulaire.='<br><button type="submit" name="submit" class="log-form-btn"><span>Login</span></button>';
+        $this->formulaire.=$submitString;
         return $this->formulaire;
     }
 

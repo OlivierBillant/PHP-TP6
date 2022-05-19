@@ -39,8 +39,22 @@ Tester l’affichage obtenu.
         $formulaire->setSubmit();
         echo $formulaire->getForm();
         ?>
-
     </div>
+
+    <div class="container">
+        <h2>Ajout d'une seconde classe héritant de form</h2>
+
+        <?php
+        require_once "Form2.class.php";
+        $nouveauFormulaire = new Form2();
+        $nouveauFormulaire->setText();
+        $nouveauFormulaire->setText();
+        $nouveauFormulaire->setRadio();
+        $nouveauFormulaire->setSubmit();
+        echo $nouveauFormulaire->getForm();
+        ?>
+    </div>
+
 </body>
 
 </html>
